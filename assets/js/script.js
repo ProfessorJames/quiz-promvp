@@ -10,12 +10,16 @@ document.addEventListener('DOMContentLoaded', function (){
 })
 
 
-const getQuestions = (category = 'easy', difficulty, amount = 10, type = 'multiple') => {
+
+// generate picker to select categories an
+
+
+const getQuestions = (category, difficulty = `easy` , amount = 10, type = `multiple`) => {
     fetch(`https://opentdb.com/api.php?amount=${amount}&category=${category}&difficulty=easy&type=multiple`).then( res => res.json()).then(data => console.log(data)).catch(err => console.log(err))
 }
 
 
-getQuestions('easy', 22);
+getQuestions(22, 'medium', 15, 'boolean');
 
 
 
