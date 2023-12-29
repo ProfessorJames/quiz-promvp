@@ -10,15 +10,32 @@
         <title>Quiz Pro</title>
     </head>
     <body>
-        <section class="background">
-            <div id="welcome-text">
-                <p>Welcome to Quiz Pro. Become a Quiz Champion </p>
+        <div class="quiz-area">
+            <div class="_background">
+                <div id="welcome-section">
+                    <h1 class="welcome-text">Welcome to Quiz Pro. Become a Quiz Champion </h1>
+                </div>
             </div>
-        </section>
-        <section id="settings">
-            <button>Difficulty</button>
-            <button>Subject</button>
-        </section>
-        <script src="assets/js/script.js"></script>
+            <div id="settings">
+                <div class="topic">
+                    <label for="topic">Topic:</label>
+                    <select name="topic" id="topic">
+                        <option value="general knowledge">General Knowledge</option>
+                        <option value="sport">Sport</option>
+                        <option value="history">History</option>
+                        <option value="politics">Politics</option>
+                    </select>
+                </div>
+                <div class="difficulty">
+                    <label for="difficulty">Difficulty:</label>
+                    <select name="difficulty" id="difficulty">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+            </div>
+            <script src="assets/js/script.js"></script>
+        </div>
     </body>
 </html>
