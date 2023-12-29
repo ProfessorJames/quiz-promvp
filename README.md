@@ -1,1 +1,1 @@
-# quiz-pro
+# Quiz Pro
